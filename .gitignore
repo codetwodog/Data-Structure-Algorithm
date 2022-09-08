@@ -35,3 +35,6 @@ build/
 
 ### MAC ###
 .DS
+
+### JAVA ###
+/out
