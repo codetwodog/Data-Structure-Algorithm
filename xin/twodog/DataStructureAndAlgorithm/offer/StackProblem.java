@@ -2,7 +2,7 @@ package xin.twodog.DataStructureAndAlgorithm.offer;
 
 import java.util.Stack;
 
-public class Offer {
+public class StackProblem {
     /**
      * Your MinStack object will be instantiated and called as such:
      * MinStack obj = new MinStack();
@@ -16,8 +16,6 @@ public class Offer {
         CQueue cQueue = new CQueue();
         cQueue.appendTail(2);
         System.out.println(cQueue.deleteHead());
-
-
     }
 
     static class CQueue {
@@ -89,5 +87,7 @@ public class Offer {
             return integersStack2.peek();
         }
     }
+
+
 
 }
