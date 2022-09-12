@@ -1,4 +1,4 @@
-package xin.twodog.DataStructureAndAlgorithm;
+package xin.twodog.algorithm;
 
 public class Weekgame287 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package xin.twodog.DataStructureAndAlgorithm;
+package xin.twodog.algorithm;
 
 public class Palindrome {
     public boolean isPalindrome(int x) {

@@ -1,4 +1,4 @@
-package xin.twodog.DataStructureAndAlgorithm.offer;
+package xin.twodog.algorithm.offer;
 
 import java.util.Stack;
 

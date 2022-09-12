@@ -1,4 +1,4 @@
-package xin.twodog.DataStructureAndAlgorithm;
+package xin.twodog.algorithm;
 
 
 /**
