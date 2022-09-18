@@ -39,7 +39,6 @@ public class TreeProblem {
     }
 
     /**
-     *  Siemens
      * @param root
      * @return
      */
@@ -59,6 +58,42 @@ public class TreeProblem {
                 if (treeNode.left != null) treeNodesQueue.add(treeNode.left);
                 if (treeNode.right != null) treeNodesQueue.add(treeNode.right);
             }
+            listList.add(temp);
+
+        }
+        return listList;
+    }
+
+    /**
+     * @param root
+     * @return
+     */
+    public List<List<Integer>> levelOrder2(TreeNode root) {
+        List<List<Integer>> listList = new ArrayList<>();
+        Queue<TreeNode> treeNodesQueue = new LinkedList<>();
+        if (root == null) return new ArrayList<>();
+        treeNodesQueue.offer(root);
+        int flag = 0;
+        while (!treeNodesQueue.isEmpty()) {
+            int size = treeNodesQueue.size();
+            List<Integer> temp = new ArrayList<>();
+            while (size-- > 0) {
+                TreeNode treeNode = treeNodesQueue.poll();
+
+                temp.add(treeNode.val);
+
+                if (treeNode.left != null) treeNodesQueue.add(treeNode.left);
+                if (treeNode.right != null) treeNodesQueue.add(treeNode.right);
+
+            }
+            if (flag % 2 == 1) {
+                List<Integer> list = new ArrayList<>();
+                for (int i = temp.size() - 1; i >= 0; i--) {
+                    list.add(temp.get(i));
+                }
+                temp = list;
+            }
+            flag++;
             listList.add(temp);
 
         }
